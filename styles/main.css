@@ -1,0 +1,95 @@
+/* styling particular elements */
+
+* {
+    text-align: center;
+    font-size: 1em;
+    font-family: cursive;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    /* padding-top: 2px; */
+    /* padding-bottom: 2px; */
+}
+
+body {
+    background-image: url("../images/battlefield.jpg");
+}
+
+#all-the-html {
+    padding: 20px;
+}
+
+#your-character, #ready-2-fight, #enemy-name {
+    display: none;
+}
+
+#top-row-container {
+    text-align: center;
+}
+
+#mid-row-container, #bottom-row-container {
+    display: none;
+}
+
+/* styling classes -- mine */
+
+.the-pics {
+    width: 80px;
+    height: auto;
+    background-color: gray;
+}
+
+.image-frame {
+    display: inline-block;
+    font-family: cursive;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.image-frame > p {
+    margin: 10px;
+}
+
+
+/* restyling default styles */
+h1 {
+    display:block;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+button {
+    background-color: ;
+}
+
+#yes-button, #no-button {
+    display: inline;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#yes-button {
+    border: 2px green solid;
+    color: white;
+    background-color: navy;
+}
+
+#no-button {
+    border: 2px red solid;
+    color: white;
+    background-color: gray;
+}
+
+#fight-button {
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 5px tomato double;
+}
+
+#very-bottom {
+    display: none;
+}

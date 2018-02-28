@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- reset browser styles -->
+    <link rel="assets/stylesheet" type="text/css" media="screen" href="styles/reset.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- my styles -->
+    <style>
+        .tooltip-1 {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltiptext-1 {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip-1:hover .tooltiptext-1 {
+            visibility: visible;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/jQuery.js"></script>
+    <script src="scripts/crazy.js"></script>
+    
+</head>
+
+<body>
+    <div id="all-the-html">
+        <header id="the-header">
+            <div id="logo">
+
+            </div>
+            <nav id="unused-navbar">
+
+            </nav>
+        </header>
+        <div id="content">
+            <h1 id="page-title">
+                Star Wars Role Playing Game &ndash; U.S. Civil War Edition!
+            </h1>
+            <!-- <div class="tooltip-1">Hover over me
+                    <span class="tooltiptext-1">Tooltip text</span>
+            </div> -->
+            <h2 id="choose-character">
+                Choose Your Character
+                <h5 id="click-hero">click image to select</h5>
+            </h2>
+
+            <div id="top-row-container">
+            </div>
+
+            <h2 id="your-character">You are
+                <span id="your-character-name">________</span>. Now choose your enemy!
+            </h2>
+
+            <div id="ready-2-fight">
+                <h2>
+                    <p>Are you ready to
+                        <button id="fight-button">fight!</button>against 
+                        <span id="the-enemy"></span>
+                    </p>
+                </h2>
+            </div>
+            <h2 id="fight-outcome"></h2>
+
+            <div id="mid-row-container">
+            </div>
+
+            <div id="bottom-row-container">
+            </div>
+        </div>
+        <div id="very-bottom"><p id="the-defeated">The defeated are </p></div>
+    </div>
+    <script>
+        // initialize();
+        
+        var RowHTML = ''
+        for (i=1; i<5; i++) {
+            RowHTML += makeFrame(i)
+        }
+        $("#top-row-container").html(RowHTML);
+        $("#mid-row-container").html(RowHTML);
+        $("#bottom-row-container").html("<h2 id='upcoming-opponets' >Upcoming Opponents</h2>"+RowHTML);
+
+    </script>
+</body>
+
+</html>
